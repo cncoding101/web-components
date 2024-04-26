@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "esnext",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"]
+}
