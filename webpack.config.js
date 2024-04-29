@@ -1,12 +1,16 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = () => ({
   entry: "./src/index.ts",
   mode: "development",
   plugins: [
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
+      filename: "index.html",
     }),
   ],
   module: {
@@ -30,5 +34,21 @@ module.exports = () => ({
     historyApiFallback: {
       index: "index.html",
     },
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: false,
+          },
+          output: {
+            comments: false,
+          },
+        },
+        extractComments: false,
+      }),
+    ],
   },
 });

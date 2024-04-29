@@ -5,13 +5,16 @@
   </head>
   <body>
     <div role="main">
-      <template id="tooltip">
-        <span>(?)</span>
-      </template>
-
-      <tool-tip text="Lets go and parteey"></tool-tip>
-      <a is="confirm-link" href="https://google.com/">Hello world!</a>
+      <p>
+        <tool-tip text="Lets go and parteey">
+          <span class="highlight">Web components</span>
+          are awesome!
+        </tool-tip>
+        <!-- <a is="confirm-link" href="https://google.com/">Hello world!</a> -->
+      </p>
       <article id="app"></article>
+      <tool-tip> hello world! </tool-tip>
+      <custom-modal></custom-modal>
     </div>
   </body>
 </html>
