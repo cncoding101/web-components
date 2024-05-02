@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Webcomponents!</title>
+    <style>
+      * {
+        box-sizing: border-box;
+
+        body {
+          margin: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div role="main">
+      <p>
+        <tool-tip text="Lets go and parteey">
+          <span class="highlight">Web components</span>
+          are awesome!
+        </tool-tip>
+        <!-- <a is="confirm-link" href="https://google.com/">Hello world!</a> -->
+      </p>
+      <article id="app"></article>
+      <tool-tip></tool-tip>
+      <wcs-modal>
+        <p>Hello world!</p>
+      </wcs-modal>
+      <p>Please confirm your choice.</p>
+      <button id="confirm">Show</button>
+    </div>
+
+    <script>
+      const confirmBtn = document.querySelector("#confirm");
+      const modal = document.querySelector("wcs-modal");
+
+      confirmBtn.addEventListener("click", () => {
+        modal.open();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "pretty": true,
+    "target": "ES2015",
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
+    "jsx": "preserve",
+    "allowJs": true,
+    "removeComments": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "tslib": ["bower_components/tslib/tslib.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/cue.d.ts"],
+  "exclude": ["node_modules"]
+}
