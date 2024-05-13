@@ -11,9 +11,16 @@
         }
       }
     </style>
+
+    <script
+      src="http://localhost:8080/static/wcs/hello.js"
+      type="module"
+    ></script>
   </head>
   <body>
     <div role="main">
+      <wcs-translator></wcs-translator>
+
       <p>
         <tool-tip text="Lets go and parteey">
           <span class="highlight">Web components</span>
@@ -22,7 +29,7 @@
         <!-- <a is="confirm-link" href="https://google.com/">Hello world!</a> -->
       </p>
       <article id="app"></article>
-      <tool-tip></tool-tip>
+      <!-- <tool-tip></tool-tip> -->
       <wcs-modal>
         <p>Hello world!</p>
       </wcs-modal>

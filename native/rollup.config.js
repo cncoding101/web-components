@@ -37,9 +37,9 @@ module.exports = {
     typescript(),
     resolve(),
     commonjs(),
-    // cleaner({
-    //   targets: ["dist"],
-    // }),
+    cleaner({
+      targets: ["dist"],
+    }),
     // copy({
     //   targets: [{ src: "public/index.html", dest: "dist" }],
     // }),
@@ -47,6 +47,6 @@ module.exports = {
     //   open: true,
     //   contentBase: "dist",
     // }),
-    terser(),
+    // terser(),
   ],
 };

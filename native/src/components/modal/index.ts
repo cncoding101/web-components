@@ -9,16 +9,17 @@ import styles from "@/components/modal/style";
 })
 export default class Modal extends FASTElement {
   @attr isOpen = false;
-  // testService = cue.core.webcomponents.CUEElement.prototype;
+  // testService: typeof cue.core.webcomponents.CUEElement.prototype;
 
   constructor() {
     super();
 
     // this.testService = new cue.core.webcomponents.CUEElement();
+    // this.testService.id = "hello";
+
     const cancelBtn = this.shadowRoot.querySelector("#cancel");
     const confirmBtn = this.shadowRoot.querySelector("#confirm");
 
-    console.log("what is cancel btn and confirm btn", cancelBtn, confirmBtn);
     // cancelBtn.addEventListener("click", this._hide.bind(this));
     // confirmBtn.addEventListener("click", this._hide.bind(this));
   }

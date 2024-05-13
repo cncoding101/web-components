@@ -17,8 +17,7 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
-      "tslib": ["bower_components/tslib/tslib.d.ts"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/cue.d.ts"],
