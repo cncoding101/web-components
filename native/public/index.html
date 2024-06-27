@@ -13,7 +13,7 @@
     </style>
 
     <script
-      src="http://localhost:8080/static/wcs/hello.js"
+      src="http://localhost:8080/static/v2/wcs/translator/index.js"
       type="module"
     ></script>
   </head>
@@ -21,29 +21,29 @@
     <div role="main">
       <wcs-translator></wcs-translator>
 
-      <p>
+      <!-- <p>
         <tool-tip text="Lets go and parteey">
           <span class="highlight">Web components</span>
           are awesome!
         </tool-tip>
-        <!-- <a is="confirm-link" href="https://google.com/">Hello world!</a> -->
+        <a is="confirm-link" href="https://google.com/">Hello world!</a>
       </p>
       <article id="app"></article>
-      <!-- <tool-tip></tool-tip> -->
+      <tool-tip></tool-tip>
       <wcs-modal>
         <p>Hello world!</p>
       </wcs-modal>
       <p>Please confirm your choice.</p>
-      <button id="confirm">Show</button>
+      <button id="confirm">Show</button> -->
     </div>
 
     <script>
-      const confirmBtn = document.querySelector("#confirm");
-      const modal = document.querySelector("wcs-modal");
+      // const confirmBtn = document.querySelector("#confirm");
+      // const modal = document.querySelector("wcs-modal");
 
-      confirmBtn.addEventListener("click", () => {
-        modal.open();
-      });
+      // confirmBtn.addEventListener("click", () => {
+      //   modal.open();
+      // });
     </script>
   </body>
 </html>
